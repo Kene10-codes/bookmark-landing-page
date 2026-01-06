@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -43,7 +47,7 @@ header {
 }
 
 header h2 {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 900;
 }
 
@@ -59,11 +63,41 @@ header div p {
 
 header div button {
     padding: 5px;
-    width: 130px;
-    height: 40px;
-    border-radius: 3px;
+    width: 150px;
+    height: 39px;
+    border-radius: 5px;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
     background-color: transparent;
     color: rgb(28, 28, 83);
+    border: none;
+}
+
+header div p + button {
+    background-color: rgb(34, 34, 121);
+    color: white;
+    margin-right: 5px;
+}
+
+header div button.firefox-btn {
+    background-color: rgb(243, 241, 241);
+    color: black;
+}
+
+section {
+    text-align: center;
+    padding: 15px 70px;
+}
+
+section h2 {
+    padding: 0 0 12px 0;
+}
+
+section div.features-details {
+    display: block;
+    margin: auto;
+    max-width: 480px;
+}
+section div p {
+    color: #363535;
 }
