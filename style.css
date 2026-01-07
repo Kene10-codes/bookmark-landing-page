@@ -99,5 +99,102 @@ section div.features-details {
     max-width: 480px;
 }
 section div p {
+    font-size: 14px;
     color: #363535;
+}
+
+section div.features-lists-wrapper {
+    display: block;
+    margin: 20px auto;
+
+}
+
+section div.features-lists {
+    max-width: 600px;
+    display: block;
+    margin: 40px auto;
+}
+
+section div.features-lists ul {
+    display: flex;
+    place-content: center space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #423e3e;
+}
+
+section div.features-lists ul:hover {
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+section div.features-lists ul li:nth-child(even):hover{
+    padding-bottom: 4px;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    color: red;
+}
+
+section div.features-lists ul li:nth-child(odd):hover{
+    padding-bottom: 4px;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    color: red;
+}
+
+section div.features-lists li {
+    list-style-type: none;
+    color: #797474;
+    font-size: 14px;
+}
+
+section div.features-lists-wrapper hr {
+    color: red;
+    background-color: blue;
+}
+
+section div.features-content-wrapper {
+    margin-top: 50px;
+}
+
+section div.features-content-one {
+    display: flex;
+    align-items: center;
+    
+}
+
+section div.bookmark-in-one-click {
+    max-width: 400px;
+    text-align: justify;
+}
+
+section div.bookmark-in-one-click h2{
+    font-size: 28px;
+    color: rgb(43, 43, 170);
+}
+
+section div.bookmark-in-one-click p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+section div.features-content-one img {
+    margin-right: 50px;
+}
+section div.features-content-two,
+section div.features-content-three{
+    display: none;
+}
+
+section div.features-lists-wrapper 
+div.features-content-one button {
+    padding: 5px;
+    width: 150px;
+    height: 39px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(43, 43, 170);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
