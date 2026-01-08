@@ -93,7 +93,7 @@ section h2 {
     padding: 0 0 12px 0;
 }
 
-section div.features-details {
+section div.features-details, section div.extension-details {
     display: block;
     margin: auto;
     max-width: 480px;
@@ -197,4 +197,50 @@ div.features-content-one button {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+}
+
+section div.extension-wrapper{
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+section div.extension-wrapper img {
+    width: 60px;
+    height: auto;
+}
+
+section div.extension-details p {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+section div.extension-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+section div.extension-box p, img {
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+section div.extension-box button {
+    width: 180px;
+    height: 38px;
+    background-color: rgb(43, 43, 170);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  
 }
