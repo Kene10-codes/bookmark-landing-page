@@ -11,8 +11,9 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px 70px;
+    padding: 25px 70px;
 }
 
 ul {
@@ -55,22 +56,27 @@ header h2 span{
     display: block;
 }
 
-header div p {
-    padding: 15px 0;
+header img {
+    max-width: 100%;
+}
+
+header p {
+    padding: 23px 0;
     color: #363535;
     word-spacing: 1px;
 }
 
 header div button {
     padding: 5px;
-    width: 150px;
-    height: 39px;
+    width: 180px;
+    height: 38px;
     border-radius: 5px;
     font-size: 13px;
     font-weight: 700;
     background-color: transparent;
     color: rgb(28, 28, 83);
     border: none;
+    cursor: pointer;
 }
 
 header div p + button {
@@ -155,13 +161,12 @@ section div.features-lists-wrapper hr {
 }
 
 section div.features-content-wrapper {
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 section div.features-content-one {
     display: flex;
     align-items: center;
-    
 }
 
 section div.bookmark-in-one-click {
@@ -176,9 +181,10 @@ section div.bookmark-in-one-click h2{
 
 section div.bookmark-in-one-click p {
     font-size: 14px;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 section div.features-content-one img {
+    max-width: 100%;
     margin-right: 50px;
 }
 section div.features-content-two,
@@ -189,8 +195,8 @@ section div.features-content-three{
 section div.features-lists-wrapper 
 div.features-content-one button {
     padding: 5px;
-    width: 150px;
-    height: 39px;
+    width: 180px;
+    height: 38px;
     border-radius: 5px;
     font-size: 13px;
     font-weight: 700;
@@ -204,7 +210,7 @@ div.features-content-one button {
 section div.extension-wrapper{
     display: block;
     margin: 25px auto;
-    max-width: 700px;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     
@@ -221,7 +227,7 @@ section div.extension-details p {
 }
 
 section div.extension-box {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,13 +299,13 @@ section div.faq-answer{
 }
 
 section div.faq-answer p {
-    word-spacing: 4px;
+    word-spacing: 2px;
 }
 
 section div.faq-wrapper button{
     padding: 5px;
-    width: 150px;
-    height: 39px;
+    width: 180px;
+    height: 38px;
     border-radius: 5px;
     font-size: 13px;
     font-weight: 700;
@@ -311,7 +317,7 @@ section div.faq-wrapper button{
 
 section#joined{
     margin: 0;
-    height: 200px;
+    height: 300px;
     background-color: rgb(49, 49, 150);
 }
 
@@ -349,24 +355,53 @@ section div.contact-us {
 
 section div.contact-us input{
     border: 1px solid grey;
-    width: 180px;
-    height: 30px;
+    width: 240px;
+    height: 38px;
+    border-radius: 5px;
     margin-right: 10px;
 }
 
 section div.contact-us button {
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 38px;
     cursor: pointer;
     font-weight: 700;
+    border-radius: 5px;
 }
 
 footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding: 15px 70px;
+    padding: 8px 70px;
 }
 
 
 
+@media screen and (max-width: 1108px) {
+  
+   nav {
+    padding: 25px 25px;
+}
+
+header {
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+
+header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    padding: 23px 0;
+    word-spacing: 0;
+}
+
+section div.features-content-one img {
+    margin-right: 30px;
+}
+
+}
