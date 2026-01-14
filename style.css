@@ -106,6 +106,7 @@ section div.faq-details{
     margin: auto;
     max-width: 480px;
 }
+
 section div p {
     font-size: 14px;
     color: #363535;
@@ -113,14 +114,13 @@ section div p {
 
 section div.features-lists-wrapper {
     display: block;
-    margin: 20px auto;
-
+    margin: 15px auto;
 }
 
 section div.features-lists {
     max-width: 600px;
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 section div.features-lists ul {
@@ -161,7 +161,15 @@ section div.features-lists-wrapper hr {
 }
 
 section div.features-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 45px;
+}
+
+section div.features-content-wrapper img {
+    max-width: 100%;
+    width: 450px;
 }
 
 section div.features-content-one {
@@ -183,10 +191,12 @@ section div.bookmark-in-one-click p {
     font-size: 14px;
     padding: 5px 0;
 }
+
 section div.features-content-one img {
     max-width: 100%;
     margin-right: 50px;
 }
+
 section div.features-content-two,
 section div.features-content-three{
     display: none;
@@ -213,7 +223,6 @@ section div.extension-wrapper{
     max-width: 800px;
     display: flex;
     flex-direction: row;
-    
 }
 
 section div.extension-wrapper img {
@@ -268,20 +277,16 @@ section div.faq-wrapper{
     display: block;
     margin: auto;
     max-width: 700px;
-
 }
 
 section div.faq-one {
    margin: 5px 0;
-   
 }
 
 section div.faq-answer{
   text-align: left;
   display: none;
 }
-
-
 
 section div.faq-question{
     display: flex;
@@ -378,11 +383,14 @@ footer {
 }
 
 
-
 @media screen and (max-width: 1108px) {
   
    nav {
     padding: 25px 25px;
+}
+
+li {
+    font-size: 13px;
 }
 
 header {
@@ -403,5 +411,11 @@ header p {
 section div.features-content-one img {
     margin-right: 30px;
 }
+
+
+section div.features-content-wrapper img {
+    width: 400px;
+}
+
 
 }
