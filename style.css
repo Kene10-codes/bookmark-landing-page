@@ -16,6 +16,10 @@ nav {
     padding: 25px 70px;
 }
 
+nav img {
+    display: none;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -418,4 +422,15 @@ section div.features-content-wrapper img {
 }
 
 
+}
+
+@media screen and (max-width: 450px) {
+    ul {
+        display: none;
+    }
+    
+    nav img {
+        display: block;
+    }
+    
 }
