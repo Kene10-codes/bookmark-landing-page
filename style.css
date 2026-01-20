@@ -16,7 +16,7 @@ nav {
     padding: 25px 70px;
 }
 
-nav img {
+nav img.icon-hamburger {
     display: none;
 }
 
@@ -403,7 +403,7 @@ header {
 }
 
 header h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -424,13 +424,35 @@ section div.features-content-wrapper img {
 
 }
 
+@media screen and (max-width: 699px) {
+    header h2 {
+        font-size: 26px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     ul {
         display: none;
     }
-    
-    nav img {
-        display: block;
+
+    nav img.logo {
+        width: 110px;
     }
+    
+    nav img.icon-hamburger {
+        display: block; 
+    }
+
+    header h2 {
+    font-size: 23px;
+    font-weight: 900;
+}
+
+header h2 span{
+    display: inline-block;
+}
+
+
+
     
 }
