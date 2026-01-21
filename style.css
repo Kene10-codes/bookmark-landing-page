@@ -101,7 +101,7 @@ section {
 }
 
 section h2 {
-    padding: 0 0 12px 0;
+    padding-bottom: 10px;
 }
 
 section div.features-details, section div.extension-details,
@@ -117,8 +117,10 @@ section div p {
 }
 
 section div.features-lists-wrapper {
-    display: block;
-    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+   
 }
 
 section div.features-lists {
@@ -166,8 +168,8 @@ section div.features-lists-wrapper hr {
 
 section div.features-content-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    place-content: center center;
     margin-top: 45px;
 }
 
@@ -178,7 +180,7 @@ section div.features-content-wrapper img {
 
 section div.features-content-one {
     display: flex;
-    align-items: center;
+    place-content: center center;
 }
 
 section div.bookmark-in-one-click {
@@ -198,7 +200,7 @@ section div.bookmark-in-one-click p {
 
 section div.features-content-one img {
     max-width: 100%;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 section div.features-content-two,
@@ -398,36 +400,96 @@ li {
 }
 
 header {
-    margin-top: 20px;
-    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 20px 20px;
+}
+
+header div button {
+    width: 100%;
+   margin: 5px 0;
 }
 
 header h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
 }
 
 header p {
-    padding: 23px 0;
+    padding: 12px 0;
     word-spacing: 0;
+    font-size: 14px;
 }
+
+header img {
+    display: none;
+}
+
+section {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 5px 0;
+}
+
+section h2 {
+    padding-bottom: 5px;
+}
+
+section div.features-details, section div.extension-details,
+section div.faq-details{
+    max-width: auto;
+}
+
+
+
+section div.features-lists-wrapper {
+    margin: 10px auto;
+}
+
+section div.features-lists {
+    max-width: auto;
+    margin: 20px auto;
+}
+
+section div.features-lists li {
+    font-size: 0.8rem;
+}
+
+
+
+section div.features-content-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 section div.features-content-one img {
-    margin-right: 30px;
+    width: auto;
+    margin-right: 0;
+}
+
+section div.bookmark-in-one-click {
+    max-width: 100%;
+    text-align: center;
+}
+
+section div.bookmark-in-one-click h2{
+    font-size: 24px;
+    padding: 10px 0;
+    color: rgb(43, 43, 170);
+}
+
+section div.bookmark-in-one-click button {
+    width: 100% !important;
 }
 
 
-section div.features-content-wrapper img {
-    width: 400px;
-}
 
 
-}
-
-@media screen and (max-width: 699px) {
-    header h2 {
-        font-size: 26px;
-    }
 }
 
 @media screen and (max-width: 450px) {
@@ -443,6 +505,7 @@ section div.features-content-wrapper img {
         display: block; 
     }
 
+
     header h2 {
     font-size: 23px;
     font-weight: 900;
@@ -451,6 +514,7 @@ section div.features-content-wrapper img {
 header h2 span{
     display: inline-block;
 }
+
 
 
 
