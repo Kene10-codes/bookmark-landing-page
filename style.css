@@ -287,11 +287,18 @@ section div.faq-wrapper{
     max-width: 700px;
 }
 
-section div.faq-one {
+section div.faq-item {
    margin: 5px 0;
 }
 
+/* Active state */
+.faq-item.active .faq-answer {
+  display: block;
+  transition: all 0.2s ease;
+}
+
 section div.faq-answer{
+  background: #f9f9f9;
   text-align: left;
   display: none;
 }
@@ -301,14 +308,17 @@ section div.faq-question{
     align-items: center;
     justify-content: space-between; 
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 section div.faq-question p {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 0;
 }
 
 section div.faq-answer{
-    display: block;
+    display: none;
 }
 
 section div.faq-answer p {
@@ -324,6 +334,7 @@ section div.faq-wrapper button{
     font-weight: 700;
     color: #fff;
     background-color: rgb(49, 49, 150);
+    cursor: pointer;
     border: none;
     margin-top: 80px;
 }

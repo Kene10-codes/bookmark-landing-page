@@ -11,3 +11,16 @@ links.forEach(link => {
     navLinks.classList.remove("active");
   });
 });
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        const faqItem = question.parentElement;
+
+        // toggle class
+        faqItem.classList.toggle("active")
+
+
+    })
+})
