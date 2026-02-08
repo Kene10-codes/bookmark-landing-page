@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
    <nav>
         <div>
             <img class="logo" src="/assets/logo-bookmark.svg" alt="Bookmark Logo">
         </div>
-        <ul>
+        <ul id="menu" class="nav-links">
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Contact</a></li>
             <li><a class="login-btn" href="#">Login</a></li>
         </ul>
-        <img class="icon-hamburger" src="/assets/icon-hamburger.svg" />
-    </nav>
 
+            <img id="hamburger" onclick="toggleMenu()" class="icon-hamburger" src="/assets/icon-hamburger.svg" />
+  
+       
+    </nav>
     <header>
         <div>
             <h2>A Simple Bookmark <span>Manager</span></h2>
@@ -47,11 +50,11 @@
 
         <div class="features-lists-wrapper">
             <div class="features-lists">
-               <ul>
+               <!-- <ul>
                 <li>Simple Bookmarking</li>
                 <li>Speady Searching<li>
                 <li>Easy Sharing</li>
-               </ul>
+               </ul> -->
             </div>
             
             <div class="features-content-wrapper">
